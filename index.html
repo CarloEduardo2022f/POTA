@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Página inicial</title>
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <body>
+        <header>
+
+        </header>
+        <div class="conteiner">
+            <div class="divInserir">
+                <div>
+                    <br><p id ="pRadio" class="outrosTextos">Selecione uma opção: </p>
+                    <input type="radio" id="lista" name="exibicao" value="1"></input>
+                    <label class="outrosTextos" for="lista">Lista</label>
+                    <br><input type="radio" id="pilha" name="exibicao" value="2"></input>
+                    <label class="outrosTextos" for="pilha">Pilha</label>
+                    <h2 class="textoH2">Digite algo</h2>
+                    <input class="label" id="textoCamp" type="text" autocomplete="off">
+                    <br><button onclick="limpar()" class="btn" id="clear">Limpar</button>
+                    <button onclick="tratamentoDados()" class="btn" id="clear">Inserir</button><br>
+                </div>
+            </div> 
+            <div class="divResultado">
+                <h3 class="textoH2">Resultado: </h3>
+                <span id="dadosArray"></span>
+            </div>
+        </div>
+        <script src="scripts/main.js">
+            
+        </script>
+        
+    </body>
+</html>
